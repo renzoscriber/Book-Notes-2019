@@ -86,7 +86,74 @@ The microscopic world does not obey Boolean logic
 \\
 Notation: Let $\psi_a \rightarrow \psi_b + \psi_c$ denote the case where a system goes from some state $a$ into an equal superposition of states $b$ and $c$
 \section{Old Quantum Theory}
+Max Planck = first to suggest that energy is quantized 
+\subsection{Black Body Radiation}
+Around 1859 (same year Darwin published his \textit{Origin of Species}), the German experimental physicist, Krichhoff conjectured that determination the energy spectrum for a given black body was the "holy grail" of physics 
+\\
+\\
+Two basic ways in which heat propagates through a given medium
+    \begin{itemize}
+        \item Conduction = the rate of temperature change depends on a temperature gradient; goverened by a diffusion equation
+            \begin{equation}
+                \frac{dT}{dt} = -\alpha \frac{d^2}{dx^2}T
+            \end{equation}
+            \begin{itemize}
+                \item $\alpha$ is a constant that depends on the medium
+                \item Once a medium has uniformly distrubuted temperature, $\Dot{T}=0$
+            \end{itemize}
+        \item Radiation = independent of a temperature gradient
+            \begin{itemize}
+                \item Radiation can and does take place at a constant temperature (which can make it more difficult to study)
+                \item Consider the following two cases:
+                    \begin{enumerate}
+                        \item White body = an object that reflects all incident EM radiation
+                        \item Black body = an object that absorbs all incident EM radiation
+                            \begin{itemize}
+                                \item Approximated examples: The Sun and the Earth
+                                \item Questions regarding the radiation leaving a black body:
+                                    \begin{itemize}
+                                        \item What kind of properties woulod the radiation have?
+                                        \item Would would we observe if we were inside the black body?
+                                    \end{itemize}
+                                \item Classical prediction: 
+                                    \begin{itemize}
+                                        \item Every atom in a black body will emit radiation at all possible frequencies
+                                        \item At temperature $T$, the energy of each frequency is equal to $kT$, where $k$ denotes Boltzmann's constant
+                                        \item Predicts that a black body will emit an infinite amount of radiation
+                                    \end{itemize}
+                                 \item The classical prediction for black body radiation turned out to be wrong and became known as the \textbf{ultraviolet catastrophe}
+                                
+                            \end{itemize}
+                    \end{enumerate}
+            \end{itemize}
+    \end{itemize}
+Planck's guess equation for the energy density of a black body:
+    \begin{equation}
+        E = hf\frac{1}{e^{hf/kT}-1}
+    \end{equation}
+    \begin{itemize}
+        \item Variables
+            \begin{itemize}
+                \item $h \approx 6.663 \cdot 10^{-34} \mathrm{Js}$ denotes Planck's constant
+                \item $f$ denotes the frequency of the radiation 
+                \item $k$ denotes Boltzmann's constant
+                \item $T$ denotes the temperature of the black body
+                \item Classical limit: $T$ is sufficiently high so that $e^{hf/kT} \approx 1 + hf/kT$ and thus, $E \approx kT$
+            \end{itemize}
+        \item Gives the \textit{average} energy emitted by a black body at a particular frequency
+    \end{itemize}
+Density of states (per unit volume) for a black body:
+    \begin{equation}
+        g(f) = \frac{8\pi}{c^3}f^2
+    \end{equation}
 \section{Quantum Mechanics}
+Postulates of Quantum Mechanics
+\begin{enumerate}
+    \item States of physical systems are represented by complex functions called wave functions
+    \item Observables of physical systems, that is, things that we can measure, such as the position or momentum of a particle, are represented by Hermitian operators
+    \item \textbf{Born measurement postulate}: When we make a measurement of the system, we probabilistically obtain the answer according to the modulus square of the wave function
+    \item The system, when not measured, evolves according to the Schrodinger equation
+\end{enumerate}
 \section{Applications of Quantum Mechanics}
 \section{Schrodinger Equation in Three Dimensions}
 \section{Spin and Statistics}
